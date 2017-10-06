@@ -9,3 +9,8 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 export EDITOR=mvim
 export HISTCONTROL=ignoredups
 export HISTFILESIZE=5000
+
+alias editaliases="vim ~/.bash_profile && reload"
+alias ll="ls -alh"
+alias reload=". ~/.bash_profile"
+alias shutupvim="rm /var/tmp/*.swp"
