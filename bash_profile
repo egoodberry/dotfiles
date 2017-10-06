@@ -13,6 +13,16 @@ export HISTFILESIZE=5000
 alias editaliases="vim ~/.bash_profile && reload"
 alias ll="ls -alh"
 alias reload=". ~/.bash_profile"
+alias server="foreman start -f Procfile.dev"
 alias shutupvim="rm /var/tmp/*.swp"
+alias workspace="cd ~/workspace"
+alias vts="cd ~/workspace/viewthespace"
+alias z="zeus rspec"
+alias zake="zeus rake"
+alias zonsole="zeus c"
 
 eval "$(rbenv init -)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
