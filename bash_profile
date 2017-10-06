@@ -14,3 +14,5 @@ alias editaliases="vim ~/.bash_profile && reload"
 alias ll="ls -alh"
 alias reload=". ~/.bash_profile"
 alias shutupvim="rm /var/tmp/*.swp"
+
+eval "$(rbenv init -)"
