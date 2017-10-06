@@ -1,0 +1,25 @@
+[alias]
+  co = checkout
+  st = status
+[fetch]
+  prune = true
+[format]
+  pretty = format:%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s
+[log]
+  date = short
+[push]
+  default = simple
+[core]
+  editor = vim
+[color]
+  ui = true
+[diff]
+  compactionHeuristic = 1
+[pager]
+  log = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+  show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+  diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+[interactive]
+  diffFilter = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
+[include]
+  path = ~/.gitconfig.local
