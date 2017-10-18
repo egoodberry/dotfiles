@@ -17,7 +17,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
 Plugin 'sjl/gundo.vim'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-endwise'
@@ -36,25 +35,18 @@ Plugin 'FelikZ/ctrlp-py-matcher'
 
 let mapleader = ","
 
-cabbrev W w
-cabbrev Q q
-cabbrev Wq wq
-
 map \           :NERDTreeToggle<CR>
 map \|          :NERDTreeFind<CR>
-map <D-N>       :CommandTFlush<CR>:CommandT<CR>
-map <leader>F   :CommandTFlush<CR>:CommandT<CR>
 map <leader>/   <plug>NERDCommenterToggle
 map <silent> <D-C> :let @* = expand("%")<CR>:echo "Copied: ".expand("%")<CR>
 map <leader>C :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>
 map <MiddleMouse>   <Nop>
 imap <MiddleMouse>  <Nop>
 map <leader>u :GundoToggle<CR>
-map Y yg_
 
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
-let g:ctrlp_max_depth = 100
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_max_files = 0
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git|public'
 
 au FocusLost * silent! wa
 
@@ -163,5 +155,3 @@ highlight clear SignColumn
 call gitgutter#highlight#define_highlights()
 
 let g:ackprg = 'ag --vimgrep'
-
-let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
