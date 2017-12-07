@@ -16,6 +16,8 @@ export HISTFILESIZE=5000
 
 alias be="bundle exec"
 alias editaliases="vim ~/.bash_profile && reload"
+alias ht="cd ~/workspace/hightower"
+alias interview="cd ~/workspace/interview/exercises/portfolio_manager"
 alias ll="ls -alh"
 alias reload=". ~/.bash_profile"
 alias server="foreman start -f Procfile.dev"
@@ -34,4 +36,4 @@ export NVM_DIR="$HOME/.nvm"
 
 nvm use 6.9.5
 
-export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
