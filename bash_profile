@@ -28,6 +28,8 @@ alias z="zeus rspec"
 alias zake="zeus rake"
 alias zonsole="zeus c"
 
+alias q="CAPYBARA_JS_ERRORS=true be rspec"
+
 eval "$(rbenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
